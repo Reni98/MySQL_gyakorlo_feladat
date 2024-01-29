@@ -1,0 +1,21 @@
+create database tanker
+character set utf8
+collate utf8_hungarian_ci;
+
+create table szemelyek (
+    az int not null primary key auto_increment,
+    nev varchar(50),
+    telepules varchar(50),
+    cim varchar(50),
+    belepes date
+);
+
+insert into szemelyek
+(nev, telepules, cim, belepes)
+values
+('Nagy József', 'Szolnok', 'Nyár u. 3.', '2010-03-17'),
+('Pár Elek', 'Debrecen', 'Tél u. 3.', '2005-01-01'),
+('Tér Ferenc', 'Szolnok', 'Kossuth u. 5.', '2000-02-01'),
+('Dolog Károly', 'Szeged', 'Almás tér 2', '2007-05-01'),
+('Tronf Mihály', 'Debrecen', 'Lát u. 45.', '2005-02-01'),
+('Ab Béla', 'Szolnok', 'Bach u. 91', '2000-07-01');
